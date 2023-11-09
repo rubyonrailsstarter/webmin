@@ -1,0 +1,11 @@
+version: '3'
+services:
+  webmin:
+    image: webmin/webmin
+    ports:
+      - "10000:10000"
+    environment:
+      - WEBMIN_ENABLED=1
+    volumes:
+      - /etc/webmin
+      - /var/webmin
