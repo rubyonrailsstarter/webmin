@@ -1,7 +1,6 @@
 version: '3'
 services:
   webmin:
-    image: webmin/webmin
     ports:
       - "10000:10000"
     environment:
